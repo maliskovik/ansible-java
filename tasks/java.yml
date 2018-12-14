@@ -1,0 +1,19 @@
+---
+- name: Java add ppa
+  apt_repository:
+    repo: "{{ java_ppa }}"
+    state: present
+    mode: 0644
+
+- name: Accept java licence
+  debconf:
+    name: "{{ java_package }}"
+    question: "shared/accepted-oracle-license-v1-1"
+    value: "true"
+    vtype: string
+
+- name: Install java
+  apt:
+    name: "{{ java_package }}"
+    state: latest
+    force: yes
