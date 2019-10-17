@@ -1,3 +1,5 @@
 ---
-java_ppa: ppa:webupd8team/java
-java_package: oracle-java8-installer
+java_ppa: ppa:linuxuprising/java
+java_packages:
+  - oracle-java11-installer
+  - oracle-java11-set-default

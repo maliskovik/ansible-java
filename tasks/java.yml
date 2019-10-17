@@ -7,13 +7,13 @@
 
 - name: Accept java licence
   debconf:
-    name: "{{ java_package }}"
+    name: "{{ java_packages }}"
     question: "shared/accepted-oracle-license-v1-1"
     value: "true"
     vtype: string
 
 - name: Install java
   apt:
-    name: "{{ java_package }}"
+    name: "{{ java_packages }}"
     state: latest
     force: yes
