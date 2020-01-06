@@ -1,5 +1,4 @@
 ---
 java_ppa: ppa:linuxuprising/java
 java_packages:
-  - oracle-java11-installer
-  - oracle-java11-set-default
+  - oracle-java13-installer
