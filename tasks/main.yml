@@ -1,2 +1,5 @@
 ---
-- include: java.yml
+- include: oracle.yml
+  when: java_vendor == "oracle"
+- include: openjdk.yml
+  when: java_vendor == "openjdk"

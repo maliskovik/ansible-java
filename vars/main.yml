@@ -1,4 +1,6 @@
 ---
-java_ppa: ppa:linuxuprising/java
-java_packages:
-  - oracle-java13-installer
+java_oracle_ppa: ppa:linuxuprising/java
+java_oracle_packages:
+  - "oracle-java{{ java_version }}-installer"
+java_openjdk_packages:
+  - openjdk-{{ java_version }}-jre
